@@ -20,7 +20,7 @@
                     <b-input type="password" :state="userData.password && userData.password.length ? true : false" placeholder="Contraseña" v-model="userData.password"></b-input>
                 </b-form-group>
 
-                <b-form-group label="url de tu foto" class="mt-3">
+                <b-form-group label="URL de tu foto" class="mt-3">
                     <b-input type="url" :state="userData.photo_url && userData.photo_url.length ? true : false" placeholder="URL de tu foto" v-model="userData.photo_url"></b-input>
                 </b-form-group>
 
@@ -31,6 +31,7 @@
         </b-card>
     </b-col>
 </b-row>
+
 <b-row v-if="showContent && !showLogin">
     <b-col md="12" class="d-flex justify-content-center mt-5">
         <b-img  rounded="circle" alt="Circle image" style="width: 12rem; height: 12rem" :src="userData.photo_url"></b-img>
